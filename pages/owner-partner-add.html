@@ -40,6 +40,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- dropzonejs -->
     <link rel="stylesheet" href="../plugins/dropzone/min/dropzone.min.css">
 
+    <style>
+        .bootstrap-switch .bootstrap-switch-handle-on,
+        .bootstrap-switch .bootstrap-switch-handle-off,
+        .bootstrap-switch .bootstrap-switch-label {
+            line-height: 1.8rem;
+        }
+    </style>
+
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -315,7 +323,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <div class="card-body">
                                     <form>
                                         <div class="row">
-                                            <div class="col-sm-8">
+                                            <div class="col-sm-4">
                                                 <!-- text input -->
                                                 <div class="form-group">
                                                     <label>Nome Completo</label>
@@ -336,6 +344,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <!-- text input -->
+                                                <div class="form-group">
+                                                    <label>Situação</label>
+                                                    <div></div>
+                                                    <input style="line-height: 1.8rem;" type="checkbox"
+                                                        name="my-checkbox" checked data-bootstrap-switch
+                                                        data-off-color="danger" data-on-color="success">
+
                                                 </div>
                                             </div>
                                         </div>
